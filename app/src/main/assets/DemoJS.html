@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WebViewDemo</title>
+</head>
+<body>
+<h1>这是一个WebViewDemo</h1>
+
+<button onclick="webviewalert()">点击弹窗</button>
+<button onclick="js2native()">js2native</button>
+</body>
+</html>
+<script>
+    function webviewalert(){
+        alert("launcher not found!");
+        document.location = "js://webview?val1=1188";
+    }
+    function js2native(){
+        if(window.callNative){
+            callNative.callNative("qyqx");
+        }
+    }
+    function callJS(){
+            return "getnull"
+    }
+</script>
